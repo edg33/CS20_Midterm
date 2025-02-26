@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zesty's: Reviews</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script>
+        function filterReviews() {
+            var category = document.getElementById("review-category").value;
+            var reviews = document.getElementsByClassName("review-box");
+
+            for (var i = 0; i < reviews.length; i++) {
+                // Use a javascript array
+                var categories = reviews[i].getAttribute("data-categories").split(", ");
+                if (category === "All" || categories.includes(category)) {
+                    reviews[i].style.display = "block";
+                } else {
+                    reviews[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="banner">
+        <a href="home.html"><img src="images/Screenshot 2024-03-05 183648.png" alt="logo" id="logo" ></a>
+        <h1 id="banner_line">Fine Italian Dining</h1> 
+        <nav id="nav">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./aboutus.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="active" href="./reviews.html">Reviews</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2 id="review-header" style="margin-top: 10%; padding-top: 10px">Hear From Our Satisfied Customers:</h2>
+    
+    <div class="filter-section">
+        <select id="review-category">
+            <option value="All">All</option>
+            <option value="Service">Service</option>
+            <option value="Food">Food</option>
+            <option value="Ambiance">Ambiance</option>
+        </select>
+        <button onclick="filterReviews()">Filter</button>
+    </div>
+
+    <div class="reviews-container">
+        <div class="review-box" data-categories="Food, Ambiance">
+            <p>"The Bread Basket and Fried Calamari were a delightful start to our meal. Paired with the cozy ambiance, our dining experience at Zesty's was unforgettable!"<br> -Sarah H.</p>
+        </div>
+        <div class="review-box" data-categories="Food, Service">
+            <p>"The Boar Gnocchi and Zesty's Famous Lasagna were mouthwatering. The attentive service made our evening even more special. Highly recommended!"<br> -John D.</p>
+        </div>
+        <div class="review-box" data-categories="Ambiance, Service">
+            <p>"The warm and inviting ambiance at Zesty's, coupled with the excellent service, made our dinner truly enjoyable. A perfect spot for a romantic evening!"<br> -Peter M.</p>
+        </div>
+        <div class="review-box" data-categories="Food, Ambiance, Service">
+            <p>"From the delicious Cacio e Pepe to the stunning ambiance and outstanding service, Zesty's is a gem that everyone should experience. Can't wait to return!"<br> -Adam S.</p>
+        </div>
+        <div class="review-box" data-categories="Food">
+            <p>"The Fettuccine Alfredo was creamy and rich, and the Penne all'Arrabbiata had just the right amount of spice. Zesty's knows how to do pasta right!"<br> -Jessica L.</p>
+        </div>
+        <div class="review-box" data-categories="Ambiance">
+            <p>"The elegant and sophisticated ambiance at Zesty's makes it the perfect destination for any special occasion. Truly a feast for the senses!"<br> -Ryan C.</p>
+        </div>
+        <div class="review-box" data-categories="Service">
+            <p>"The service at Zesty's is unmatched. From the moment we walked in, we were treated like royalty. A fantastic dining experience from start to finish!"<br> -Megan P.</p>
+        </div>
+        <div class="review-box" data-categories="Food, Ambiance">
+            <p>"The Insalata di Mare was a seafood lover's dream, and the ambiance of Zesty's transported us straight to Italy. A must-visit for any food enthusiast!"<br> -David R.</p>
+        </div>
+        <div class="review-box" data-categories="Food, Service">
+            <p>"The Tiramisu was a delightful end to our meal, and the service throughout the evening was impeccable. Zesty's never disappoints!"<br> -Laura K.</p>
+        </div>
+        <div class="review-box" data-categories="Ambiance, Service">
+            <p>"The charming ambiance and attentive service at Zesty's made our dining experience one to remember. It's always a pleasure to dine here!"<br> -Brian T.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zesty's</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner">
+        <a href="home.html"><img src="images/Screenshot 2024-03-05 183648.png" alt="logo" id="logo" ></a>
+        <h1 id="banner_line">Fine Italian Dining</h1> 
+        <nav id="nav">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./aboutus.html">About</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <li><a href="./reviews.html">Reviews</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contact-container" style="margin-top:8%;">
+        <div class="contact-info">
+            <h1>Questions? Concerns? Allergies?</h1>
+            <h2>Contact Us!</h2>
+            <p><strong>Address:</strong> 123 Main Street, Medford, MA 02155</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@zestys.com">info@zestys.com</a></p>
+            <p><strong>Hours:</strong> Everyday 11:30am - 9:30pm</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

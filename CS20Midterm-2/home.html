@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zesty's: Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+    $('.menu-option').each(function() {
+        $(this).width('30vw')
+    })
+    $('.menu-option').hover(
+        function() {
+            // Mouse enter - animate width to 100 pixels over 1000 milliseconds
+            $(this).stop().animate({'width': '35vw'}, 1000);
+        },
+        function() {
+            // Mouse leave - animate width back to its original size
+            $(this).stop().animate({'width': '30vw'}, 1000);
+        }
+    );
+});
+    </script>
+</head>
+<body>
+    <div id="banner">
+        <a href="home.html"><img src="images/Screenshot 2024-03-05 183648.png" alt="logo" id="logo" ></a>
+        <h1 id="banner_line">Fine Italian Dining</h1> 
+        <nav id="nav">
+            <ul>
+                <li><a class="active" href="./home.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./aboutus.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./reviews.html">Reviews</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mission-statement" style="margin:7%; width:auto; max-width:80%;" >
+        <h2 id="mission-statement" style="margin-top: 0px; padding-top: 10%; font-size: 5vw;">Savor the Spirit of Italy at Zesty's: Where Flavor Meets Tradition</h2>
+    </div>
+    <div id="head_paragraph">
+        At Zesty's, we're on a mission to transport you to the heart of Italy with 
+        every bite. With a passion for authentic flavors and a dedication to time-honored 
+        recipes, we strive to create an unforgettable dining experience where our 
+        guests can indulge in the rich culinary heritage of Italy. From our handcrafted 
+        pastas to our wood-fired pizzas, each dish at Zesty's is infused with the 
+        vibrant essence of Italian cuisine. We are committed to using only the finest 
+        ingredients, sourced locally and imported from Italy, to ensure that every 
+        meal reflects the true essence of Italian gastronomy. Our warm hospitality, 
+        cozy ambiance, and exceptional service complement our delectable offerings, 
+        inviting you to embrace the zest for life with every visit to Zesty's
+    </div>
+    <div id="title-container"><span id="image-title">Some house favorites</span></div>
+    <div id="options">
+        <div>
+            <a href="./menu.html">
+            <img class="menu-option" src="images/meat.jpg" alt="meat_dish">
+            </a>
+        </div>
+        <div>
+            <a href="./menu.html">
+            <img class="menu-option" src="images/red_pasta.jpg" alt="red_sauce">
+            </a> 
+        </div>
+        <div>
+            <a href="./menu.html">
+            <img class="menu-option" src="images/spagetti.jpg" alt="spagetti">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

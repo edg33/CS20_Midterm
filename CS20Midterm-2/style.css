@@ -1,0 +1,611 @@
+*{
+    font-family: "consolas", monospace;
+}
+
+body {
+    margin: 0;
+    background-image: url(images/olayinka-babalola-r01ZopTiEV8-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h2 {
+    font-family: "consolas", monospace;
+    margin: auto;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-top: 5%
+}
+
+#banner {
+    background-color: #2B2B2B;
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#banner_line {
+    position: absolute;
+    top: 50px;
+    left: 285px;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+#logo {
+    width: 250px;
+    align-self: left;
+    text-align: right;
+}
+
+#head_paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F25353;
+    width: 80vw;
+    height: auto;
+    border-radius: 40px;
+    font-size: 2vw;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-family: "consolas", monospace;
+    padding: 30px;
+}
+#about-us h2{
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: #F25353;
+    width: 80vw;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 80px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#head_paragraph3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F25353;
+    width: 60vw;
+    height: 200px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#mission-statement h2{
+    color: #FFFFFF;
+    font-family: 'Major Mono Display', monospace;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 65px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 120px;
+    padding-top: 200px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: #2B2B2B;
+    text-align: center;
+
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-family: 'Major Mono Display', monospace; 
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+#nav a:hover {
+    color: #B63E3E;
+}
+
+#banner nav .active{
+    color: #F25353; 
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+    padding: 20px;
+    top: 50px;
+    max-width: 1200px;
+    background-color: #F25353;
+    color: #FFFFFF;
+    border-radius: 20px;
+
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #B63E3E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+#menu-container {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.menu-subsection {
+    background-color: #F25353;
+    width: 600px;
+    height: fit-content;
+    border:none;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1300px) {
+    #menu-container {
+        margin-top: 100px;
+    }
+    .menu-subsection {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    #menu-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #about-us {
+        margin-top: 200px
+    }
+}
+.menu-subsection ul {
+    font-weight: bold;
+}
+.food-descriptions {
+    font-weight: normal;
+}
+
+.menu-head {
+    font-weight: bolder;
+    font-family: "Major Mono Display", monospace;
+}
+.menu-subsection li {
+    margin-bottom: 25px;
+}
+
+#options {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+#options img {
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    width: 30vw;
+    transition-property:all;
+    transition-duration: 1s;
+}
+#options img:hover {
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.75);
+}
+
+#image-title {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: "Major Mono Display", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 35px;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 150px;
+    width: 80vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    #banner {
+        width: 100%;
+        height: 100px;
+    }
+    #banner_line {
+        top: 25px;
+        left: 35%;
+        font-size: 15px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    #head_paragraph, #head_paragraph3 {
+        width: 200px;
+        height: auto;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    #head_paragraph2 {
+        width: 200px;
+        height: auto;
+        font-size: 10px;
+        margin-top: 65px;
+    }
+    #mission-statement {
+        margin-top: 60px;
+        font-size: 10px;
+    }
+
+    #nav a {
+        font-size: 14px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%;
+    }
+
+    .contact-info h2, .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+    }
+
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        font-size: 18px;
+    }
+
+    .contact-form button {
+        font-size: 20px;
+    }
+
+    #menu-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu-subsection {
+        width: 75vw;
+    }
+
+    .menu-head {
+        font-size: 20px;
+    }
+
+    .menu-subsection li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    #options img {
+        width: 80vw;
+    }
+
+    #image-title {
+        font-size: 30px;
+        width: 90vw;
+        margin-top: 20px;
+        height: 100px;
+    }
+    .reservation-form-container {
+        height: 100px;
+        margin-top: 20px;
+    }
+    #review-header {
+        height: 60px;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .reviews-container {
+        display: flex;
+        max-width: 1200px;
+        background-color: #F25353;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+
+        border-radius: 10px;
+    }
+
+    .review-box {
+        width: 80vw;
+    }
+    #about-us h2 {
+        font-size: 30px;
+        height: 50px;
+    }
+    #about-us {
+        height: 20px;
+        margin-top: 20px
+    }
+
+    #head_paragraph {
+        font-size: 10px;
+        width: 200px;
+    }
+    
+    h2 {
+        font-family: "consolas", monospace;
+        margin: auto;
+        font-size: 30px;
+        color: #2B2B2B;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #F25353;
+        padding-top: 5%
+    }
+}
+#review-header h2{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.reservation-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #000000; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 10%;
+}
+
+.reservation-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.reservation-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form-container label {
+    margin-bottom: 5px;
+}
+#reservation-form {
+    background-color: #B63E3E;
+    padding: 10px;
+}
+.reservation-form-container input[type="text"],
+.reservation-form-container input[type="email"],
+.reservation-form-container input[type="tel"],
+.reservation-form-container input[type="date"],
+.reservation-form-container input[type="time"],
+.reservation-form-container input[type="number"],
+.reservation-form-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+}
+
+.reservation-form-container button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #F25353; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-container {
+    display: flex;
+    max-width: 1200px;
+    background-color: #F25353;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.review-box {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 40%;
+    border: 1px solid #FFFFFF;
+    padding: 15px;
+    min-height: auto;
+}
+
+
+.filter-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-section select,
+.filter-section button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 1024px) {
+    #banner_line {
+        font-size: 48px; 
+        left: 200px; 
+    }
+
+    #logo {
+        width: 200px; 
+    }
+
+    #nav a {
+        font-size: 32px; 
+        margin-right: 10px; 
+    }
+
+    div.image-container img {
+        height: 450px; 
+    }
+
+    div.image-label {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    #banner_line {
+        font-size: 36px;
+        top: 20px;
+        left: 50%; 
+        transform: translateX(-25%); 
+    }
+
+    #nav ul {
+        display: block; 
+    }
+
+    #nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    #nav a {
+        font-size: 24px;
+        display: block; 
+        padding: 10px 0;
+    }
+
+    div.image-container img {
+        height: 300px; /* Further reduce the image height */
+    }
+
+    div.image-label {
+        font-size: 14px;
+    }
+
+    div.scroll-container {
+        margin-top: 10px; /* Reduce the top margin */
+    }
+}
+
+@media (max-width: 480px) {
+    #banner_line {
+        font-size: 24px; /* Further reduce the font size */
+    }
+
+    #logo {
+        width: 150px; /* Further reduce the logo size */
+    }
+
+    #nav a {
+        font-size: 20px; /* Further reduce the font size */
+        padding: 8px 0; /* Adjust the padding */
+    }
+
+    div.image-container img {
+        height: 200px; /* Further reduce the image height */
+    }
+
+    div.image-label {
+        font-size: 12px; /* Further reduce the font size */
+    }
+}
